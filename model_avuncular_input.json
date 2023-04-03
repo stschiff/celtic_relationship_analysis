@@ -1,0 +1,18 @@
+{
+    "burial_date_hochdorf_mean": -530,
+    "burial_date_hochdorf_err": 15,
+    "burial_date_asperg_mean": -490,
+    "burial_date_asperg_err": 15,
+    "age_hochdorf_mean": 45,
+    "age_hochdorf_err": 10,
+    "age_asperg_mean": 30,
+    "age_asperg_err": 10,
+    "generic_mother_age_min": 15,
+    "generic_mother_age_max": 45,
+    "birth_date_mother": -600,
+    "mother_age_hochdorf": 20,
+    "mother_age_sister": 20,
+    "sister_age_asperg": 20,
+    "age_hochdorf": 50,
+    "age_asperg": 20
+  }
