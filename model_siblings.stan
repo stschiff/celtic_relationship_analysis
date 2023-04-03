@@ -7,13 +7,8 @@ data {
   real<lower=0> age_hochdorf_err;
   real<lower=0> age_asperg_mean;
   real<lower=0> age_asperg_err;
-  real<lower=0> generic_mother_age_min;
-  real<lower=0> generic_mother_age_max;
-}
-
-transformed data {
-  real<lower=0> generic_mother_age_mean = (generic_mother_age_min + generic_mother_age_max) / 2.0;
-  real<lower=0> generic_mother_age_err  = (generic_mother_age_max - generic_mother_age_mean);
+  real<lower=0> mother_dist_mean;
+  real<lower=0> mother_dist_err;
 }
 
 parameters {
@@ -34,6 +29,6 @@ model {
   age_asperg           ~ normal(age_asperg_mean,           age_asperg_err);
   burial_date_hochdorf ~ normal(burial_date_hochdorf_mean, burial_date_hochdorf_err);
   burial_date_asperg   ~ normal(burial_date_asperg_mean,   burial_date_asperg_err);
-  mother_age_hochdorf  ~ normal(generic_mother_age_mean,   generic_mother_age_err);
-  mother_age_asperg    ~ normal(generic_mother_age_mean,   generic_mother_age_err);
+  mother_age_hochdorf  ~ normal(mother_dist_mean,          mother_dist_err);
+  mother_age_asperg    ~ normal(mother_dist_mean,          mother_dist_err);
 }
