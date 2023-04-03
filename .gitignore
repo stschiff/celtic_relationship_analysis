@@ -4,4 +4,5 @@
 .Ruserdata
 *.rds
 *.hpp
-model_full_sibs
+model_siblings
+model_avuncular
