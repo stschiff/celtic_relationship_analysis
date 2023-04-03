@@ -3,23 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>Labels</key>
-	<string>Birth Date
-Mother
+	<string>Burial Date
 Hochdorf
 Asperg
-Histogram of birth_date_a
-Histogram of birth_date_h
-Histogram of birth_date_m
+Histogram of burial_date_hochdorf
+Histogram of burial_date_asperg
 
 Ages
 Mother 1st
 Mother 2nd
 Hochdorf
 Asperg
-Histogram of age_a
-Histogram of age_h
-Histogram of birth_age_mother_a
-Histogram of birth_age_mother_h
+Histogram of age_asperg
+Histogram of age_hochdorf
+Histogram of mother_age_asperg
+Histogram of mother_age_hochdorf
 
 Histogram of lp__
 </string>
