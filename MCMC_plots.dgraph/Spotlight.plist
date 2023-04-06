@@ -9,6 +9,11 @@ Asperg
 Histogram of burial_date_hochdorf
 Histogram of burial_date_asperg
 
+Burial Date
+Hochdorf
+Histogram of burial_date_hochdorf
+Histogram of burial_date_asperg
+
 Age
 Mother 1st
 Mother 2nd
@@ -37,12 +42,6 @@ Histogram of sister_age_asperg
 Histogram of mother_age_sister
 Histogram of mother_age_hochdorf
 
-Log Likelihood
-siblings
-avuncular
-Histogram of lp__
-Histogram of lp__
-
 years
 prob
 
@@ -60,18 +59,17 @@ Asperg
 Histogram of age_asperg
 Histogram of age_hochdorf
 Histogram of mother_age_asperg
-Histogram of daughter_age_hochdorf
+Histogram of mother_age_hochdorf
+Histogram of grandmother_age_mother_hochdorf
+Histogram of grandmother_age_mother_asperg
 
 Log Likelihood
 siblings
 avuncular
-grandparents
+Cousins
 Histogram of lp__
 Histogram of lp__
 Histogram of lp__
-
-years
-prob
 </string>
 	<key>Text</key>
 	<string></string>

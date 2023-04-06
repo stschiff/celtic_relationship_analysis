@@ -9,11 +9,11 @@
     "age_asperg_err": 6,
     "mother_dist_mean": 30,
     "mother_dist_err": 6,
-    "father_dist_mean": 40,
-    "father_dist_err": 9,
-    "birth_date_hochdorf": -580,
-    "daughter_age_hochdorf": -530,
-    "mother_age_asperg": 40,
-    "age_hochdorf": 60,
-    "age_asperg": 40
-    }
+    "birth_date_grandmother": -560,
+    "grandmother_age_mother_hochdorf": 20,
+    "grandmother_age_mother_asperg": 20,
+    "mother_age_hochdorf": 20,
+    "mother_age_asperg": 20,
+    "age_hochdorf": 20,
+    "age_asperg": 20
+}
