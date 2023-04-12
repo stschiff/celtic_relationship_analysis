@@ -1,22 +1,24 @@
 data {         
-  real          burial_date_hochdorf_mean;
-  real          burial_date_hochdorf_err;
-  real          burial_date_asperg_mean;
-  real          burial_date_asperg_err;
-  real<lower=0> age_hochdorf_mean;
-  real<lower=0> age_hochdorf_err;
-  real<lower=0> age_asperg_mean;
-  real<lower=0> age_asperg_err;
-  real<lower=0> mother_dist_mean;
-  real<lower=0> mother_dist_err;
+  real burial_date_hochdorf_mean;
+  real burial_date_hochdorf_err;
+  real burial_date_asperg_mean;
+  real burial_date_asperg_err;
+  real age_hochdorf_mean;
+  real age_hochdorf_err;
+  real age_asperg_mean;
+  real age_asperg_err;
+  real mother_dist_mean;
+  real mother_dist_err;
+  real mother_birth_date_lower;
+  real mother_birth_date_upper;
 }
 
 parameters {
-  real          birth_date_mother;
-  real<lower=0> mother_age_hochdorf;
-  real<lower=0> mother_age_asperg;
-  real<lower=0> age_hochdorf;
-  real<lower=0> age_asperg;
+  real<lower=mother_birth_date_lower, upper=mother_birth_date_upper> birth_date_mother;
+  real mother_age_hochdorf;
+  real mother_age_asperg;
+  real age_hochdorf;
+  real age_asperg;
 }
 
 transformed parameters {

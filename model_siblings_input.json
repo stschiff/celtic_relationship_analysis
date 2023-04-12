@@ -13,5 +13,7 @@
   "mother_age_hochdorf": 20,
   "mother_age_asperg": 40,
   "age_hochdorf": 50,
-  "age_asperg": 20
+  "age_asperg": 20,
+  "mother_birth_date_lower": -600,
+  "mother_birth_date_upper": -500
 }
