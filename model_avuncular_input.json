@@ -14,5 +14,7 @@
     "mother_age_sister": 20,
     "sister_age_asperg": 20,
     "age_hochdorf": 50,
-    "age_asperg": 20
-  }
+    "age_asperg": 20,
+    "mother_birth_date_lower": -650,
+    "mother_birth_date_upper": -550
+}

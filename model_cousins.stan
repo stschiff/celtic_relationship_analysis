@@ -9,10 +9,12 @@ data {
   real<lower=0> age_asperg_err;
   real<lower=0> mother_dist_mean;
   real<lower=0> mother_dist_err;
+  real grand_mother_birth_date_lower;
+  real grand_mother_birth_date_upper;
 }
 
 parameters {
-  real                              birth_date_grandmother;
+  real<lower=grand_mother_birth_date_lower, upper=grand_mother_birth_date_upper> birth_date_grandmother;
   real<lower=0>                     grandmother_age_mother_hochdorf;
   real<lower=0>                     grandmother_age_mother_asperg;
   real<lower=0>                     mother_age_hochdorf;

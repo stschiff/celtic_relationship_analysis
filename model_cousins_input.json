@@ -15,5 +15,7 @@
     "mother_age_hochdorf": 20,
     "mother_age_asperg": 20,
     "age_hochdorf": 20,
-    "age_asperg": 20
+    "age_asperg": 20,
+    "grand_mother_birth_date_lower": -650,
+    "grand_mother_birth_date_upper": -550
 }
