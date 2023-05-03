@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1663071,      35605]
+NotebookDataLength[   1663069,      35605]
 NotebookOptionsPosition[   1641116,      35252]
-NotebookOutlinePosition[   1641597,      35270]
-CellTagsIndexPosition[   1641554,      35267]
+NotebookOutlinePosition[   1641595,      35270]
+CellTagsIndexPosition[   1641552,      35267]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -35248,13 +35248,13 @@ Cell[BoxData[
   "Out[256]//TableForm=",ExpressionUUID->"20d6d7d6-d1a6-41dc-b21b-\
 9672a872b933"]
 }, Open  ]]
-}, Closed]]
+}, Open  ]]
 },
 WindowSize->{1372, 856},
-WindowMargins->{{Automatic, -202}, {Automatic, 305}},
+WindowMargins->{{Automatic, 548}, {Automatic, 67}},
 PrivateNotebookOptions->{"CloudPublishPath"->"/Published/stanAnalysis_02.nb"},\
 
-FrontEndVersion->"13.2 for Mac OS X ARM (64-bit) (January 30, 2023)",
+FrontEndVersion->"13.2 for Mac OS X x86 (64-bit) (January 30, 2023)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"d2c007a5-bde3-4eec-914e-acbf73a56c6c"
 ]
@@ -35459,7 +35459,7 @@ Cell[464691, 11317, 14052, 249, 242, "Output",ExpressionUUID->"2906943c-dc8e-42f
 Cell[478758, 11569, 346, 7, 30, "Input",ExpressionUUID->"afade6f9-6365-478e-b203-c632464195f7"],
 Cell[CellGroupData[{
 Cell[479129, 11580, 356, 8, 30, "Input",ExpressionUUID->"81180b7e-c0cc-450c-98a5-961882a630b4"],
-Cell[479488, 11590, 14847, 262, 259, "Output",ExpressionUUID->"de1f6c5c-b722-4f9a-91ca-f2004e0c177b"]
+Cell[479488, 11590, 14847, 262, 236, "Output",ExpressionUUID->"de1f6c5c-b722-4f9a-91ca-f2004e0c177b"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
@@ -35606,7 +35606,7 @@ Cell[CellGroupData[{
 Cell[1638004, 35166, 1087, 25, 115, "Input",ExpressionUUID->"f4619da6-ddca-4466-8316-d5a575b9ebbc"],
 Cell[1639094, 35193, 1994, 55, 127, "Output",ExpressionUUID->"20d6d7d6-d1a6-41dc-b21b-9672a872b933"]
 }, Open  ]]
-}, Closed]]
+}, Open  ]]
 }
 ]
 *)
