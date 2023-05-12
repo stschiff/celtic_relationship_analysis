@@ -1,40 +1,26 @@
-data {         
-  real          burial_date_hochdorf_mean;
-  real          burial_date_hochdorf_err;
-  real          burial_date_asperg_mean;
-  real          burial_date_asperg_err;
-  real<lower=0> age_hochdorf_mean;
-  real<lower=0> age_hochdorf_err;
-  real<lower=0> age_asperg_mean;
-  real<lower=0> age_asperg_err;
-  real<lower=0> mother_dist_mean;
-  real<lower=0> mother_dist_err;
-  real grand_mother_birth_date_lower;
-  real grand_mother_birth_date_upper;
-}
-
 parameters {
-  real<lower=grand_mother_birth_date_lower, upper=grand_mother_birth_date_upper> birth_date_grandmother;
-  real<lower=0>                     grandmother_age_mother_hochdorf;
-  real<lower=0>                     grandmother_age_mother_asperg;
-  real<lower=0>                     mother_age_hochdorf;
-  real<lower=0>                     mother_age_asperg;
-  real<lower=0>                     age_hochdorf;
-  real<lower=0>                     age_asperg;
+  real                burial_h;
+  real                burial_a;
+  real<lower=0>       age_h;
+  real<lower=0>       age_a;
+  real<lower=14.3744> age_m_h;
+  real<lower=14.3744> age_m_a;
+  real<lower=14.3744> age_m2_h;
 }
 
 transformed parameters {
-  real burial_date_hochdorf = birth_date_grandmother + grandmother_age_mother_hochdorf + mother_age_hochdorf + age_hochdorf;
-  real burial_date_asperg   = birth_date_grandmother + grandmother_age_mother_asperg   + mother_age_asperg   + age_asperg;
+   real                birth_date_grandmother = burial_h - age_h - age_m_h - age_m2_h;
+   real<lower=14.3744> age_m2_a               = burial_a - age_a - age_m_a - birth_date_grandmother;
 }
 
 model {
-  age_hochdorf                    ~ normal(age_hochdorf_mean,         age_hochdorf_err);
-  age_asperg                      ~ normal(age_asperg_mean,           age_asperg_err);
-  burial_date_hochdorf            ~ normal(burial_date_hochdorf_mean, burial_date_hochdorf_err);
-  burial_date_asperg              ~ normal(burial_date_asperg_mean,   burial_date_asperg_err);
-  grandmother_age_mother_hochdorf ~ normal(mother_dist_mean,          mother_dist_err);
-  grandmother_age_mother_asperg   ~ normal(mother_dist_mean,          mother_dist_err);
-  mother_age_hochdorf             ~ normal(mother_dist_mean,          mother_dist_err);
-  mother_age_asperg               ~ normal(mother_dist_mean,          mother_dist_err);
+  burial_h ~ normal(-530, 6);
+  burial_a ~ normal(-490, 6);
+  age_h    ~ normal( 45,  6);
+  age_a    ~ normal( 30,  6);
+  # This is tuned so that the mean is 23.2 and the 99% goes from 15 to 45
+  age_m_h - 14.3744 ~ gamma(2.31385, 0.262176);
+  age_m_a - 14.3744 ~ gamma(2.31385, 0.262176);
+  age_m2_h - 14.3744 ~ gamma(2.31385, 0.262176);
+  age_m2_a - 14.3744 ~ gamma(2.31385, 0.262176);
 }

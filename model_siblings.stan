@@ -1,36 +1,22 @@
-data {         
-  real burial_date_hochdorf_mean;
-  real burial_date_hochdorf_err;
-  real burial_date_asperg_mean;
-  real burial_date_asperg_err;
-  real age_hochdorf_mean;
-  real age_hochdorf_err;
-  real age_asperg_mean;
-  real age_asperg_err;
-  real mother_dist_mean;
-  real mother_dist_err;
-  real mother_birth_date_lower;
-  real mother_birth_date_upper;
-}
-
 parameters {
-  real<lower=mother_birth_date_lower, upper=mother_birth_date_upper> birth_date_mother;
-  real mother_age_hochdorf;
-  real mother_age_asperg;
-  real age_hochdorf;
-  real age_asperg;
+  real                burial_h;
+  real                burial_a;
+  real<lower=0>       age_h;
+  real<lower=0>       age_a;
+  real<lower=14.3744> age_m_h;
 }
 
 transformed parameters {
-  real burial_date_hochdorf = birth_date_mother + mother_age_hochdorf + age_hochdorf;
-  real burial_date_asperg   = birth_date_mother + mother_age_asperg + age_asperg;
+   real                birth_date_mother = burial_h - age_h - age_m_h;
+   real<lower=14.3744> age_m_a           = burial_a - age_a - birth_date_mother;
 }
 
 model {
-  age_hochdorf         ~ normal(age_hochdorf_mean,         age_hochdorf_err);
-  age_asperg           ~ normal(age_asperg_mean,           age_asperg_err);
-  burial_date_hochdorf ~ normal(burial_date_hochdorf_mean, burial_date_hochdorf_err);
-  burial_date_asperg   ~ normal(burial_date_asperg_mean,   burial_date_asperg_err);
-  mother_age_hochdorf  ~ normal(mother_dist_mean,          mother_dist_err);
-  mother_age_asperg    ~ normal(mother_dist_mean,          mother_dist_err);
+  burial_h ~ normal(-530, 6);
+  burial_a ~ normal(-490, 6);
+  age_h    ~ normal( 45,  6);
+  age_a    ~ normal( 30,  6);
+  # This is tuned so that the mean is 23.2 and the 99% goes from 15 to 45
+  age_m_h - 14.3744 ~ gamma(2.31385, 0.262176);
+  age_m_a - 14.3744 ~ gamma(2.31385, 0.262176);
 }

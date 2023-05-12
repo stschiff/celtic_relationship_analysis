@@ -1,17 +1,9 @@
 {
-    "burial_date_hochdorf_mean": -530,
-    "burial_date_hochdorf_err": 6,
-    "burial_date_asperg_mean": -490,
-    "burial_date_asperg_err": 6,
-    "age_hochdorf_mean": 45,
-    "age_hochdorf_err": 6,
-    "age_asperg_mean": 30,
-    "age_asperg_err": 6,
-    "father_dist_mean": 35,
-    "father_dist_err": 8,
-    "burial_date_hochdorf": -530,
-    "years_pre_fatherhood_hochdorf": 15,
-    "years_fatherhood_hochdorf": 30,
-    "age_fatherhood_son": 30,
-    "age_asperg": 20
+    "burial_h": -530,
+    "burial_a": -490,
+    "age_h": 45,
+    "age_a": 30,
+    "age_m_h": 20,
+    "age_m_a": 20,
+    "age_m2_h": 20
 }
