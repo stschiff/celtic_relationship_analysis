@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Labels</key>
+	<string>Date [BC]
+Histogram of birth_date_a
+Histogram of burial_a
+Histogram of birth_date_sister
+Birth date mother
+Asperg
+Birth date A.
+Burial date A.
+Histogram of burial_h
+Histogram of birth_date_h
+Histogram of birth_date_grandmother
+Birth date mother
+Hochdorf
+Birth date H.
+Burial date H.
+</string>
+	<key>Text</key>
+	<string></string>
+</dict>
+</plist>
