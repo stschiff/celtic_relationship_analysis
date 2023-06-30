@@ -18,6 +18,30 @@ Birth date mother
 Hochdorf
 Birth date H.
 Burial date H.
+
+Date [BC]
+Histogram of birth_date_a
+Histogram of burial_a
+Histogram of birth_date_sister
+Birth mother
+Asperg
+Birth
+Burial
+Histogram of burial_h
+Histogram of birth_date_h
+Histogram of birth_date_grandmother
+Birth mother
+Hochdorf
+Birth
+Burial
+
+a
+b
+c
+Double First Cousins P=0.04
+Full Siblings P &lt;0.001
+Half Siblings P=0.01
+Avuncular P=95%
 </string>
 	<key>Text</key>
 	<string></string>
